@@ -2,7 +2,7 @@
 	"name": "Wikidonca Google Kit",
 	"version": "7.3.11",
 	"author": [
-		"[https://www.mediawiki.org/wiki/User:Cesarinik Riccardo Cesarini]"
+		"[https://www.facebook.com/cesarinik Riccardo Cesarini]"
 	],
 	"url": "https://github.com/cesarinik/WikidoncaGoogleKit",
 	"description": "Basato sull'ormai abbandonato progetto [https://www.mediawiki.org/wiki/Extension:WikiBanner Wikibanner] (maelstr0m) e [https://www.mediawiki.org/wiki/Extension:Google_Analytics_Integration Google Analytics Integration] ([https://www.mediawiki.org/wiki/User:DavisNT Davis Mosenkovs] e Tim Laqua). Sviluppato nel nuovo formato JSON di Mediawiki con nuove funzioni (tra cui i banner in sidebar), permette di inserire nel proprio wiki i banner di Google AdSense e il codice di monitoraggio Google Analytics.",
