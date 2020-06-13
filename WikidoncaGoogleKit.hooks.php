@@ -17,7 +17,7 @@ class WikidoncaGoogleKitHooks {
 			   $wgWikidoncaGoogleKitIgnoraNamespaceID, $wgWikidoncaGoogleKitIgnoraPagine, $wgWikidoncaGoogleKitIgnoraSpeciali;
 
 		if ( $skin->getUser()->isAllowed( 'noanalytics' ) ) {
-			$text .= "<!-- Web analytics code inclusion is disabled for this user. -->\r\n";
+			$text .= "<!-- Inserimento codice Analytics disabilitato per questo utente. -->\r\n";
 			return true;
 		}
 
@@ -26,7 +26,7 @@ class WikidoncaGoogleKitHooks {
 			} ) ) > 0
 			|| in_array( $skin->getTitle()->getNamespace(), $wgWikidoncaGoogleKitIgnoraNamespaceID, true )
 			|| in_array( $skin->getTitle()->getPrefixedText(), $wgWikidoncaGoogleKitIgnoraPagine, true ) ) {
-			$text .= "<!-- Web analytics code inclusion is disabled for this page. -->\r\n";
+			$text .= "<!-- Inserimento codice Analytics disabilitato per questa pagina. -->\r\n";
 			return true;
 		}
 
@@ -59,7 +59,7 @@ EOD;
 			$appended = true;
 		}
 		if ( !$appended ) {
-			$text .= "<!-- No web analytics configured. -->\r\n";
+			$text .= "<!-- Nessun codice Analytics configurato. -->\r\n";
 		}
 		return true;
 	}
