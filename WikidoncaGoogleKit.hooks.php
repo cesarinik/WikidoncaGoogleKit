@@ -34,8 +34,6 @@ class WikidoncaGoogleKitHooks {
 
 		if ( $wgWikidoncaGoogleKitAccount !== '' ) {
 			$text .= <<<EOD
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script>
 <script async src='https://www.googletagmanager.com/gtag/js?id=
 EOD
 . $wgWikidoncaGoogleKitAccount . <<<EOD
