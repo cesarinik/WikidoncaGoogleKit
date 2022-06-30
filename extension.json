@@ -1,6 +1,6 @@
 {
 	"name": "Wikidonca Google Kit",
-	"version": "1.7.4",
+	"version": "1.7.4.30",
 	"author": [
 		"[https://www.facebook.com/cesarinik Riccardo Cesarini]"
 	],
@@ -16,7 +16,6 @@
 	},
 	"Hooks": {
 		"BeforePageDisplay": "WikidoncaGoogleKitHooks::BannerPagina",
-		"SkinBuildSidebar": "WikidoncaGoogleKitHooks::BannerLaterale",
 		"SkinAfterBottomScripts": "WikidoncaGoogleKitHooks::CodiceAnalytics",
 		"UnitTestsList": "WikidoncaGoogleKitHooks::TestsList"
 	},
