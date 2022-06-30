@@ -6,11 +6,6 @@ class WikidoncaGoogleKitHooks {
 			$out->prependHTML( $wgWikidoncaGoogleKitBannerSuperiore );
 			$out->addHTML( $wgWikidoncaGoogleKitBannerInferiore );
 		}
-		function BannerLaterale ( $skin, &$bar ) {
-			global $wgWikidoncaGoogleKitBannerLaterale;
-			$bar[ 'Ads' ] = $wgWikidoncaGoogleKitBannerLaterale;
-			return true;
-	}
 	
 	function CodiceAnalytics( Skin $skin, &$text = '' ) {
 		global $wgWikidoncaGoogleKitAccount, $wgWikidoncaGoogleKitIPAnonimo, $wgWikidoncaGoogleKitAltroCodice,
@@ -34,6 +29,7 @@ class WikidoncaGoogleKitHooks {
 
 		if ( $wgWikidoncaGoogleKitAccount !== '' ) {
 			$text .= <<<EOD
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src='https://www.googletagmanager.com/gtag/js?id=
 EOD
 . $wgWikidoncaGoogleKitAccount . <<<EOD
@@ -48,7 +44,7 @@ EOD
 . $wgWikidoncaGoogleKitAccount . <<<EOD
 ');
 </script>
-EOD;
+EOD;		
 			$appended = true;
 		}
 		if ( $wgWikidoncaGoogleKitAltroCodice !== '' ) {
