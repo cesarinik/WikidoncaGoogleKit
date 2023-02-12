@@ -1,13 +1,13 @@
 <?php
 
 class WikidoncaGoogleKitHooks {
-	function BannerPagina ( OutputPage $out, Skin $skin ) {
+	public static function BannerPagina ( OutputPage $out, Skin $skin ) {
 			global $wgWikidoncaGoogleKitBannerSuperiore, $wgWikidoncaGoogleKitBannerInferiore;
 			$out->prependHTML( $wgWikidoncaGoogleKitBannerSuperiore );
 			$out->addHTML( $wgWikidoncaGoogleKitBannerInferiore );
 		}
 	
-	function CodiceAnalytics( Skin $skin, &$text = '' ) {
+	public static function CodiceAnalytics( Skin $skin, &$text = '' ) {
 		global $wgWikidoncaGoogleKitAccount, $wgWikidoncaGoogleKitIPAnonimo, $wgWikidoncaGoogleKitAltroCodice,
 			   $wgWikidoncaGoogleKitIgnoraNamespaceID, $wgWikidoncaGoogleKitIgnoraPagine, $wgWikidoncaGoogleKitIgnoraSpeciali;
 
