@@ -14,6 +14,7 @@ class WikidoncaGoogleKitHooks {
 //			$bar[ 'Ads' ] = $wgWikidoncaGoogleKitBannerLaterale;
 //			return true;
 //	}
+// --> INSERIRE IN EXTENSION.JSON: "SkinBuildSidebar": "WikidoncaGoogleKitHooks::BannerLaterale",
 // *FINE MEMO*
 	
 	public static function CodiceAnalytics( Skin $skin, &$text = '' ) {
