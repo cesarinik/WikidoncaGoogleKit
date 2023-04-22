@@ -13,8 +13,9 @@ class WikidoncaGoogleKitHooks {
 //			global $wgWikidoncaGoogleKitBannerLaterale;
 //			$bar[ 'Ads' ] = $wgWikidoncaGoogleKitBannerLaterale;
 //			return true;
-//	}
-// --> INSERIRE IN EXTENSION.JSON: "SkinBuildSidebar": "WikidoncaGoogleKitHooks::BannerLaterale",
+//	} 
+// *NB: Parametro da reinserire negli Hooks di Extension.json: 
+// 	"SkinBuildSidebar": "WikidoncaGoogleKitHooks::BannerLaterale", ---*
 // *FINE MEMO*
 	
 	public static function CodiceAnalytics( Skin $skin, &$text = '' ) {
