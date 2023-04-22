@@ -17,11 +17,6 @@
 	"Hooks": {
 		"BeforePageDisplay": "WikidoncaGoogleKitHooks::BannerPagina",
 		"SkinAfterBottomScripts": "WikidoncaGoogleKitHooks::CodiceAnalytics",
-// *MEMO*
-// *La funzione SkinBuildSidebar non permette piu di inserire codice o immagini nella sidebar. Non ci sono ancora soluzioni conosciute per risolvere il problema.*
-//	"SkinBuildSidebar": "WikidoncaGoogleKitHooks::BannerLaterale",
-//	}
-// *FINE MEMO*
 		"UnitTestsList": "WikidoncaGoogleKitHooks::TestsList"
 	},
 	"config": {
