@@ -1,11 +1,20 @@
 <?php
 
 class WikidoncaGoogleKitHooks {
-	public static function BannerPagina ( OutputPage $out, Skin $skin ) {
+	public static function BannerPagina( OutputPage $out, Skin $skin ) {
 			global $wgWikidoncaGoogleKitBannerSuperiore, $wgWikidoncaGoogleKitBannerInferiore;
 			$out->prependHTML( $wgWikidoncaGoogleKitBannerSuperiore );
 			$out->addHTML( $wgWikidoncaGoogleKitBannerInferiore );
 		}
+	
+// *MEMO*
+// *La funzione SkinBuildSidebar non permette piu di inserire codice o immagini nella sidebar. Non ci sono ancora soluzioni conosciute per risolvere il problema.*
+//	public static function BannerLaterale ( Skin $skin, &$bar ) {
+//			global $wgWikidoncaGoogleKitBannerLaterale;
+//			$bar[ 'Ads' ] = $wgWikidoncaGoogleKitBannerLaterale;
+//			return true;
+//	}
+// *FINE MEMO*
 	
 	public static function CodiceAnalytics( Skin $skin, &$text = '' ) {
 		global $wgWikidoncaGoogleKitAccount, $wgWikidoncaGoogleKitIPAnonimo, $wgWikidoncaGoogleKitAltroCodice,
