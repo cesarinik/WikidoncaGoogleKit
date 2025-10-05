@@ -1,15 +1,15 @@
 {
 	"name": "Wikidonca Google Kit",
-	"version": "1.7.4.30",
+	"version": "1.8.4.13",
 	"author": [
 		"[https://www.facebook.com/cesarinik Riccardo Cesarini]"
 	],
 	"url": "https://github.com/cesarinik/WikidoncaGoogleKit",
-	"description": "Basato sull'ormai abbandonato [https://www.mediawiki.org/wiki/Extension:WikiBanner Wikibanner] (maelstr0m) e [https://www.mediawiki.org/wiki/Extension:Google_Analytics_Integration Google Analytics Integration] ([https://www.mediawiki.org/wiki/User:DavisNT Davis Mosenkovs] e Tim Laqua). Sviluppato nel nuovo formato JSON di Mediawiki con nuove funzioni (tra cui i banner in sidebar), permette di inserire nel proprio wiki i banner di Google AdSense e il codice di monitoraggio Google Analytics aggiornato al nuovo formato gtag.js.",
+	"description": "Basato sull'ormai abbandonato [https://www.mediawiki.org/wiki/Extension:WikiBanner Wikibanner] (maelstr0m) e [https://www.mediawiki.org/wiki/Extension:Google_Analytics_Integration Google Analytics Integration] ([https://www.mediawiki.org/wiki/User:DavisNT Davis Mosenkovs] e Tim Laqua). Sviluppato nel nuovo formato JSON di Mediawiki, permette di inserire nel proprio wiki i banner di Google AdSense e il codice di monitoraggio Google Analytics aggiornato al nuovo formato gtag.js.",
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.35"
+		"MediaWiki": ">= 1.39"
 	},
 	"AutoloadClasses": {
 		"WikidoncaGoogleKitHooks": "WikidoncaGoogleKit.hooks.php"
@@ -20,14 +20,17 @@
 		"UnitTestsList": "WikidoncaGoogleKitHooks::TestsList"
 	},
 	"config": {
+		"WikidoncaGoogleKitBannerSuperiore": {
+			"value": ""
+		},
+		"WikidoncaGoogleKitBannerInferiore": {
+			"value": ""
+		},
 		"WikidoncaGoogleKitAccount": {
 			"value": ""
 		},
 		"WikidoncaGoogleKitIPAnonimo": {
 			"value": true
-		},
-		"WikidoncaGoogleKitAltroCodice": {
-			"value": ""
 		},
 		"WikidoncaGoogleKitIgnoraNamespaceID": {
 			"value": []
